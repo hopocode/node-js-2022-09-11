@@ -1,0 +1,11 @@
+{
+  "name": "nases_skoleni",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node hello.js"
+  },
+  "dependencies": {
+    "underscore": "^1.13.4"
+  }
+}
