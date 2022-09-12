@@ -1,14 +1,18 @@
 const User = require("./User")
+const Family = require("./Family");
 
-var u = new User();
-console.log(u.getName());
+const f = new Family();
+f.printNames();
 
-// console.log(this);
+// var u = new User();
+// console.log(u.getName());
 
-const car = {
-    name: "BMW",
-    surname: "Dvořák"
-}
+// // console.log(this);
 
-//car,name = undefined;
-delete car.name;
+// const car = {
+//     name: "BMW",
+//     surname: "Dvořák"
+// }
+
+// //car,name = undefined;
+// delete car.name;
