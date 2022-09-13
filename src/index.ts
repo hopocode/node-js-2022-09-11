@@ -1,5 +1,6 @@
 import { join } from 'path';
 import { createServer, IncomingMessage, ServerResponse } from 'http';
+import restify, { Request } from 'restify';
 
 // const infoLogFilename: string = join(__dirname, "log/info.log");
 
@@ -9,6 +10,15 @@ import { createServer, IncomingMessage, ServerResponse } from 'http';
 
 // if (u) {
 // }
+
+const callRespond = (req: Request, res: Response) => {
+    res.json('hello ' + req.params.name);
+    next();
+};
+
+var restyfyServer = restify.createServer();
+restyfyServer.get('/hello/:name', callRespond);
+restyfyServer.head('/hello/:name', callRespond);
 
 const server = createServer((req: IncomingMessage, res: ServerResponse) => {
     if (req.url === '/') {
