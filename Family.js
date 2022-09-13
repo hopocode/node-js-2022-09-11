@@ -1,7 +1,7 @@
 // const  fs from 'fs';
  
 
-const file = __dirname + "/neco,txt"
+//const file = __dirname + "/neco,txt"
 
 class Family {
 

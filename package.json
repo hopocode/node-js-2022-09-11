@@ -3,9 +3,15 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "node hello.js"
+    "dev:unix": "NODE_ENV=dev node hello.js",
+    "dev_win": "set NODE_ENV=ahoj && node hello.js",
+    "prod": "NODE_ENV=dev node hello.js",
+    "test": "jest"
   },
   "dependencies": {
     "underscore": "^1.13.4"
+  },
+  "devDependencies": {
+    "jest": "^29.0.3"
   }
 }

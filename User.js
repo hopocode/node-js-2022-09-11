@@ -1,7 +1,25 @@
-class User {
-    getName() {
-        return "Pepa";
-    }
+let name;
+const getName = () =>{
+    return name;
 }
 
-module.exports = User;
+const setName = () {
+
+}
+
+// class User {
+  
+
+
+//     getName() {
+//         return "Pepa";
+//     }
+// }
+
+module.exports = {
+    getName,
+    setName
+}
+
+// var undefined = "defined";
+// console.log = () => {}
