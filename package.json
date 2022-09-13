@@ -1,17 +1,12 @@
 {
-  "name": "nases_skoleni",
+  "name": "sokol",
   "version": "1.0.0",
-  "private": true,
   "scripts": {
-    "dev:unix": "NODE_ENV=dev node hello.js",
-    "dev_win": "set NODE_ENV=ahoj && node hello.js",
-    "prod": "NODE_ENV=dev node hello.js",
-    "test": "jest"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "underscore": "^1.13.4"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hopocode/node-js-2022-09-11.git"
   },
-  "devDependencies": {
-    "jest": "^29.0.3"
-  }
+  "author": "Jan Pospisil"
 }
